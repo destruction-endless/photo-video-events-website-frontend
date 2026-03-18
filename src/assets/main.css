@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Playfair Display", serif;
+  --font-script: "Great Vibes", cursive;
+  --font-body: "Open Sans", sans-serif;
+
+  --color-cream: #f2ede4;
+  --color-primary: #5a6b4d;
+  --color-accent: #c2a878;
+  --color-dark: #2b2b2b;
+  --color-muted: #756f64;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  background-image:
+    radial-gradient(
+      circle at 18% 12%,
+      rgba(255, 255, 255, 0.34),
+      transparent 46%
+    ),
+    radial-gradient(
+      circle at 82% 82%,
+      rgba(194, 168, 120, 0.1),
+      transparent 42%
+    ),
+    linear-gradient(170deg, rgba(90, 107, 77, 0.04), rgba(90, 107, 77, 0));
+  color: var(--color-dark);
+}
+
+.dark body {
+  background-color: #20231d;
+  background-image:
+    radial-gradient(
+      circle at 22% 10%,
+      rgba(255, 255, 255, 0.04),
+      transparent 50%
+    ),
+    linear-gradient(165deg, rgba(194, 168, 120, 0.06), rgba(194, 168, 120, 0));
+  color: #ece7dc;
+}
